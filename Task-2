@@ -1,0 +1,53 @@
+print("start the calculation")
+while True:
+    num1=int(input("enter the 1st number :"))
+    operator=input("Enter the operator form (+,-,*,/,//,**,%):")
+    num2=int(input("Enter the second number:"))
+    
+    if operator == "+":
+        result=num1+num2
+    
+    
+    elif operator == "-":
+        result=num1-num2 
+        
+    elif operator == "*":
+        result=num1*num2 
+        
+      
+    elif operator == "/":
+        if num2 == 0:
+            print("2nd number can't be zero")
+            break
+        
+        result=num1/num2 
+       
+        
+    elif operator == "//":
+        if num2 == 0:
+            print("2nd number can't be zero")
+            break
+        
+        result=num1//num2    
+        
+    elif operator == "**":
+        result=num1**num2   
+    
+    elif operator == "%":
+        result=num1%num2 
+        
+    else:
+        print("invalid operator")   
+        
+    print(result)  
+    
+    print("calculation done\n\n")   
+
+      
+    a= input("do you want to end the calculation(yes/no):")
+    if a =="yes":
+        break
+    else:
+        print("new calculation")
+     
+print("Thank you")
